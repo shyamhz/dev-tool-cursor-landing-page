@@ -1,0 +1,29 @@
+:root {
+	--accent-black: #14120b;
+	--accent-text-white: #edecec;
+	--accent-text-white-dull: #edecec8c;
+}
+
+.text-white {
+	color: var(--accent-text-whtie);
+}
+
+.text-white-dull {
+	color: var(--accent-text-white-dull);
+}
+
+.color-black {
+	color: var(--accent-black);
+}
+
+.bgc-white {
+	background-color: var(--accent-text-white);
+}
+
+.bgc-black {
+	background-color: var(--accent-black);
+}
+
+.br-8 {
+	border-radius: 8px;
+}

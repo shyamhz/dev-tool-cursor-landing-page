@@ -1,4 +1,159 @@
+@font-face {
+	font-family: CursorGothic;
+	src: url(https://cursor.com/marketing-static/_next/static/media/CursorGothic_Regular-s.p.a361088d.woff2);
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+:root {
+	--accent-white: #edecec;
+	--accent-black: #14120b;
+	--accent-text-white: #edecec;
+	--accent-text-white-dull: #edecec8c;
+	--accent-gray: #dedbd7;
+	--accent-border: #3f3d38;
+
+
+	--content-width: 68.8vw;
+}
+
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: var(--accent-black);
+	color: var(--accent-text-white);
+	height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 auto;
+	font-family: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+header {
+	max-width: var(--content-width);
+	display: flex;
+	max-height: 52px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 4px;
+	/* padding-left: 4px; */
+	position: sticky;
+	top: 0px;
+	box-sizing: border-box;
+}
+
+
+#logo-section svg {
+	height: 23.8px;
+	color: var(--accent-white);
+	padding: 14px 0;
+}
+
+#navbar {
+	box-sizing: border-box;
+	height: 100%;
+	margin-left: 78px;
+}
+
+#navbar ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+#navbar li {
+	list-style: none;
+	box-sizing: border-box;
+	font-size: 0.875rem;
+	margin-top: -3px;
+}
+
+#nav-buttons {
+
+	display: flex;
+	justify-content: space-between;
+	gap: 8;
+	display: flex;
+	gap: 8px;
+	margin-top: -4px;
+	padding-right: 10px;
+	margin-left: 8px;
+
+}
+
+#sign-in-button {
+
+	font-family: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.875rem;
+	background-color: transparent;
+	border: 0.5px solid var(--accent-border);
+	color: #ffffff;
+	padding: 5px 10px;
+	padding-bottom: 4px;
+	border-radius: 20px;
+}
+
+#download-button {
+
+	font-family: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.875rem;
+	padding: 0 12px;
+	padding-left: 11px;
+	border-radius: 20px;
+	border: none;
+}
+
+#main {
+	width: var(--content-width);
+	margin: 0 auto;
+}
+
+#hero-section {
+	width: 98%;
+	padding-top: 110px;
+}
+
+#hero-heading {
+	font-style: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.578rem;
+	font-weight: normal;
+	margin-left: 1.2px;
+	width: 45%;
+}
+
+#hero-cta {
+	width: fit-content;
+	margin-top: 21px;
+	padding: 11px 22px;
+	padding-bottom: 12px;
+	border-radius: 35px;
+	margin-left: 2px;
+}
+
+#hero-cta a {
+	text-decoration: none;
+	color: var(--accent-black);
+}
+
+.banner-sections {
+	height: 680;
+	width: 98.68%;
+	margin-top: 63.7px;
+	margin-left: 1.8px;
+	border-radius: 8px;
+}
+
+#hero-ide {
+	/* background-image: url('/assets/images/hero-banner.png'); */
+	/* background-size: cover; */
+	/* background-position: center; */
 }
