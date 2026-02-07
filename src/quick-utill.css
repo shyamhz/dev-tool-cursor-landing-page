@@ -27,3 +27,28 @@
 .br-8 {
 	border-radius: 8px;
 }
+
+.row-rev {
+	flex-direction: row-reverse;
+}
+
+.pl-2dot5 {
+	padding-left: 2.5px;
+}
+
+.pr-2dot5 {
+	padding-right: 2.5px;
+}
+
+.pt-67dot2 {
+	padding-top: 67.2px;
+}
+
+.pb-67dot2 {
+	padding-bottom: 67.2px;
+}
+
+.anchor {
+	text-decoration: none;
+	color: var(--accent-text-orange);
+}
