@@ -4,7 +4,7 @@
 	font-display: swap;
 	font-weight: 400;
 	font-style: normal;
-
+	font-feature-settings: "ss09";
 }
 
 :root {
@@ -37,10 +37,14 @@ body {
 	font-family: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
 header {
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+}
 
-	width: 68vw;
+#header-container {
+	width: var(--content-width);
 	margin: 0 auto;
 	box-sizing: border-box;
 	display: flex;
@@ -48,8 +52,6 @@ header {
 	padding-top: 4px;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
-	top: 0px;
 }
 
 
@@ -471,17 +473,47 @@ header {
 	grid-column-end: 7;
 }
 
+#highlights-container #left h2 {
+	font-size: 1rem;
+	font-weight: 400;
+	position: sticky;
+	top: 64px;
+	z-index: 5;
+}
+
 #highlights-container #right {
 	grid-column-start: 7;
 	grid-column-end: 19;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#highlights-container #right a {
+	margin-top: 22.4px;
+}
+
+article {
+	background-color: #201e18;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid var(--secondary-border-color);
 }
 
 article a {
 	text-decoration: none;
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 .article-text {
 	color: var(--accent-text-white);
+	padding: 0 20px;
+	line-height: 1.5;
+}
+
+.article-sub-heading {
+	width: 94%;
 }
 
 .article-sub-heading,
@@ -489,4 +521,158 @@ span,
 time {
 	color: var(--accent-text-white-dull);
 	text-decoration: none;
+}
+
+.article-info {
+	margin-top: 22.4px;
+	padding: 0 20px;
+}
+
+#cta-section {
+	width: var(--content-width);
+	margin: 0 auto;
+	padding: 134px 0;
+	box-sizing: border-box;
+}
+
+#cta-section h2 {
+	font-weight: 400;
+	font-size: 4.5rem;
+	text-align: center;
+	margin-bottom: 22.4px;
+}
+
+#cta-section div {
+	text-align: center;
+}
+
+#cta-section a {
+	background-color: var(--accent-white);
+	text-decoration: none;
+	color: var(--accent-black);
+	font-size: 1rem;
+	padding: 12.48px 21.6px;
+	border-radius: 20px;
+}
+
+footer {
+	background-color: var(--secondary-black);
+	padding: 67.2px 20px 30px 20px;
+}
+
+footer #top {
+	width: var(--content-width);
+	margin: 0 auto;
+	margin-bottom: 100.8px;
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.footer-top-menu-box {
+	line-height: 1.5;
+}
+
+.footer-top-menu-box h3 {
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: var(--accent-text-white-dull);
+	padding-bottom: 4.667px;
+}
+
+.footer-top-menu-box li {
+	font-size: 0.875rem;
+	list-style: none;
+	padding: 4.6px 0;
+}
+
+footer #bottom {
+	width: var(--content-width);
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer #bottom small {
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--accent-text-white-dull);
+}
+
+#bottom-left {
+	display: flex;
+	gap: 15px;
+}
+
+#bottom-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: var(--accent-text-white);
+	gap: 20px;
+}
+
+#bottom-right-left {
+	display: flex;
+	flex-direction: row;
+	gap: 1px;
+	background-color: #26241e;
+	border-radius: 20px;
+}
+
+.bottom-right-button {
+	background-color: transparent;
+	height: 28px;
+	width: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 5.6px 10.5px 5.8px 10.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom-right-button span {
+
+	height: 100%;
+	color: var(--accent-text-white-dull);
+	font-family: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.button-active {
+	background-color: #3a3932;
+}
+
+.button-active span {
+	color: var(--accent-white);
+
+}
+
+#bottom-language-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28px;
+	gap: 4px;
+	color: var(--accent-text-white);
+	background-color: #26241e;
+	border: none;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 5.6px 10.5px 5.8px 10.5px;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+}
+
+#bottom-language-button span {
+	font-family: CursorGothic, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: var(--accent-text-white);
+	font-feature-settings: ss09;
+
 }
