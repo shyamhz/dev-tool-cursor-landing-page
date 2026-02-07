@@ -1,7 +1,7 @@
 # Dev Tool Landing Page - Cursor
 
 Recreate a desktop-first developer tool landing page inspired by the Cursor website.
-
+[[check here]] :: [live preview](https://cursor-clone.shyamhz.dev/)
 [[Screenshot]] :: ![Screenshot](./screenshot.png)
 
 ### Recreated sections
