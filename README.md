@@ -27,17 +27,11 @@ Recreate a desktop-first developer tool landing page inspired by the Cursor webs
 
     - Alternate image/text positions
 
-5. Feature Cards Section
-
-    - Section title
-
-    - Grid of 3–4 cards
-
-6. Testimonials
+5. Testimonials
 
     - Quote cards with name and role
 
-7. Use Cases / Stories
+6. Use Cases / Stories
 
     - Cards with image + short text
 
@@ -49,7 +43,11 @@ Recreate a desktop-first developer tool landing page inspired by the Cursor webs
 
     - Large image + short description + CTA
 
-10. Final CTA
+10. Recent Highlights
+
+    - 3 Blog entry
+
+11. Final CTA
 
     - Big heading + single button
 
